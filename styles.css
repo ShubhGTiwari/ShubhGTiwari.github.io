@@ -2,13 +2,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e8f5e9; /* Light green background */
-    color: #333;
+    background: url('images/data-science-background.jpg') no-repeat center center fixed; /* Data science background image */
+    background-size: cover; /* Cover the entire background */
+    color: #fff; /* White text for better contrast */
 }
 
 header {
-    background: #388e3c; /* Dark green */
-    color: #fff;
+    background: rgba(56, 142, 60, 0.9); /* Semi-transparent dark green */
     padding: 20px 0;
     text-align: center;
 }
@@ -36,9 +36,9 @@ nav a:hover {
 section {
     padding: 20px;
     margin: 20px;
-    background: #ffffff; /* White background for sections */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for sections */
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 h1, h2, h3 {
@@ -48,12 +48,22 @@ h1, h2, h3 {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #388e3c; /* Dark green */
+    background: rgba(56, 142, 60, 0.9); /* Semi-transparent dark green */
     color: #fff;
 }
 
-ul {
-    line-height: 1.6; /* Better spacing for lists */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular profile picture */
+    margin: 10px 0;
+}
+
+.project-img, .illustration {
+    width: 100%; /* Responsive width */
+    max-width: 600px; /* Maximum width */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px 0;
 }
 
 .project-title {
@@ -71,22 +81,6 @@ a {
 
 a:hover {
     color: #c8e6c9; /* Light green on link hover */
-}
-
-/* Profile Picture */
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Circular profile picture */
-    margin: 10px 0;
-}
-
-/* Project Images */
-.project-img {
-    width: 100%; /* Responsive width */
-    max-width: 600px; /* Maximum width */
-    border-radius: 8px; /* Rounded corners */
-    margin: 10px 0;
 }
 
 /* Responsive design for mobile */
