@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e8f5e9; /* Light green background */
     color: #333;
 }
 
 header {
-    background: #007bff;
+    background: #388e3c; /* Dark green */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -26,18 +26,77 @@ nav ul li {
 nav a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c8e6c9; /* Light green on hover */
 }
 
 section {
     padding: 20px;
     margin: 20px;
-    background: #fff;
+    background: #ffffff; /* White background for sections */
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #2e7d32; /* Darker green for headings */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #007bff;
+    background: #388e3c; /* Dark green */
     color: #fff;
+}
+
+ul {
+    line-height: 1.6; /* Better spacing for lists */
+}
+
+.project-title {
+    font-weight: bold;
+    color: #388e3c; /* Dark green for project titles */
+}
+
+.project-description {
+    color: #555; /* Slightly lighter for descriptions */
+}
+
+a {
+    color: #388e3c; /* Link color */
+}
+
+a:hover {
+    color: #c8e6c9; /* Light green on link hover */
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular profile picture */
+    margin: 10px 0;
+}
+
+/* Project Images */
+.project-img {
+    width: 100%; /* Responsive width */
+    max-width: 600px; /* Maximum width */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px 0;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+    }
 }
